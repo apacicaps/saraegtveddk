@@ -1,0 +1,73 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+@import url( 'https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600');
+
+body {
+  font-family: "Montserrat";
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__links {}
+
+  &__link {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    opacity: 0.9;
+
+    svg{
+      width:100%;
+      height: 100%;
+      position: inherit;
+    }
+  }
+}
+
+.background{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(127, 255, 212, 0.8);
+  background: linear-gradient(to bottom, rgba(127, 255, 212, 0.4) 0%,rgba(233, 150, 122, 0.4) 67%,rgba(127, 255, 212, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5ebf1', endColorstr='#e1e5ea',GradientType=0 );
+}
+.pentahedron{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: rgba(255, 228, 196, 1);
+}
+.point{
+  fill: rgba(255, 215, 0, 0.5);
+}
+
+.point2{
+  fill: rgba(144, 238, 144, 0.5);
+}
+// .x{
+//   fill: rgba(144, 238, 144, 0.5);
+// }
+.circle{
+  fill: rgba(127, 255, 212, 0.4);
+}
+
+svg{
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 40%;
+  transform: translateZ(0px);
+}
